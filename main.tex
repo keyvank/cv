@@ -1,0 +1,103 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Keyvan}{Kambakhsh}
+\title{Software Engineer}                               % optional, remove / comment the line if not wanted
+\address{Darakeh St. No. 82}{Tehran}{Iran}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\email{keyvankambakhsh@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/keyvank}                         % optional, remove / comment the line if not wanted
+\phone{+98 (912) 880 3145}
+\photo[92pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{“I believe more in the scissors than I do in the pencil.” -Truman Capote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--2020}{B.Sc. Computer Engineering}{Shahid Beheshti University}{Tehran}{\textit{}}{}
+\cventry{2012--2016}{High School}{Exceptional Talents High School}{Qazvin}{\textit{}}{}
+
+\section{Work Experience}
+\cventry{2019-Now}{Blockchain Engineer}{Finality Labs}{Remote - Los Angeles, CA, US}{}{I was working on scalability solutions of Ethereum Blockchain (Plasma/Solidity). Currently working on a GPU accelerator for a zkSNARKS library written in Rust/OpenCL\newline{}}
+\cventry{Job Offer}{Software Engineer}{CafeBazaar}{Tehran, Iran}{}{Got a job offer as a Software Engineer from a cutting-edge software company in Tehran.\newline{}}
+\cventry{2018--2019}{Software Engineer}{Stellar Asset Management}{Tehran, Iran}{}{Clojure programmer at a fintech company, doing algorithmic trading\newline{}}
+\cventry{2014--2016}{Technical Lead}{CodeLearnr LLC}{Qazvin, Iran}{}{Cofounder and technical lead of an educational startup\newline{}}
+
+\section{Languages}
+\cvitemwithcomment{Persian}{Native or bilingual proficiency}{}
+\cvitemwithcomment{English}{Professional working proficiency}{}
+\cvitemwithcomment{German}{Limited working proficiency}{}
+\section{Skills and Interests}
+\cvitem{}{Upper-intermediate expertise in following programming languages ( \textbf{C99}, \textbf{C++11}, \textbf{Python}, \textbf{Clojure}, \textbf{ClojureScript}, \textbf{Solidity}, \textbf{Rust}, \textbf{OpenCL} )}
+\cvitem{}{Cryptocurrency enthusiast, having upper-intermediate skills in Ethereum Solidity, and having implemented a Proof-of-Work cryptocurrency in Python from scratch. \textbf{https://github.com/xdtlab/pydaten} }
+\cvitem{}{Upper-intermediate expertise in *NIX operating systems.}
+\cvitem{}{Basic skills in computer emulation ( Having implemented a CHIP-8 emulator )}
+\cvitem{}{Basic skills in operating-systems development ( Having implemented a simple multi-tasking kernel with userland )}
+\cvitem{}{Interested in parallel programming and distributed computing. (Creator of the project pool.js which is a platform for Distributed Computing with CPUs or GPUs on web browsers: \textbf{https://github.com/keyvank/pooljs} }
+\cvitem{}{GitHub profile available on: \textbf{https://github.com/keyvank} }
+
+\cvitem{}{Familiar with deep learning and neural networks. Highly interested in Spiking Neural Networks (SNNs) and brain simulation.}
+\cvitem{}{Advanced Computer Graphics skills, (More description in the next section)}
+
+\section{Blockchain}
+\cvitem{}{Currently working as a Blockchain Engineer, I was also researching on state-channels and implementations different Plasma flavors on Ethereum Blockchain}
+\cvitem{}{Having built a PoW (Argon2) cryptocurrency from scratch which was designed to be a platform for storing structured data on blockchains. Find it in my GitHub: \textbf{https://github.com/xdtlab/pydaten} }
+
+\section{Computer Graphics}
+\cvitem{}{3D Engines (Having implemented a software rasterizer from scratch)}
+\cvitem{}{Ray tracers (Having the experience of implementing several minimal ray tracers)}
+\cvitem{}{Creator of the i3DML Project (A new markup-language designed for modeling 3D scenes, available on GitHub) (https://github.com/keyvank/i3dml) }
+\cvitem{}{Highly interested in Virtual Reality technologies}
+
+\section{Hobbies}
+
+\cvitem{Writing}{Author of the book i3DML - An introduction , 2015 (Not published, about one of my projects), Authoring some programming articles in codeproject.com}
+\cvitem{Startups}{Interested in startups in the field of Computer Science (Co-founder and Technical Lead of CodeLearnr Ltd.)}
+\cvitem{Music}{Playing Violin for 2 years}
+\cvitem{Kyokushin Karate}{Holding a blue belt:)}
+
+\section{References}
+\cvitem{}{Available upon request}
+
+\bibliographystyle{plain}
+\bibliography{publications}
+\clearpage
+
+\end{document}
